@@ -1,0 +1,32 @@
+{
+  "name": "plucker",
+  "description": "Pluck nested properties from an object",
+  "version": "0.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^2.10.2",
+    "faucet": "^0.0.1"
+  },
+  "scripts": {
+    "test": "node test | faucet"
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)",
+  "license": "MIT",
+  "homepage": "http://hughsk.github.io/plucker",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/plucker"
+  },
+  "bugs": {
+    "url": "https://github.com/hughsk/plucker/issues"
+  },
+  "keywords": [
+    "pluck",
+    "key",
+    "nested",
+    "property",
+    "object",
+    "get"
+  ]
+}
