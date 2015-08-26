@@ -1,10 +1,19 @@
 # plucker [![Flattr this!](https://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=hughskennedy&url=http://github.com/hughsk/plucker&title=plucker&description=hughsk/plucker%20on%20GitHub&language=en_GB&tags=flattr,github,javascript&category=software)[![experimental](http://hughsk.github.io/stability-badges/dist/experimental.svg)](http://github.com/hughsk/stability-badges) #
+[![plucker](https://nodei.co/npm/plucker.png?mini=true)](https://nodei.co/npm/plucker)
 
 Pluck nested properties from an object.
 
-## Usage ##
+## Usage
+```js
+const plucker = require('plucker')
 
-[![plucker](https://nodei.co/npm/plucker.png?mini=true)](https://nodei.co/npm/plucker)
+const pluck = plucker('foo.bar')
+pluck({ foo: { bar: 'hello' } })
+// => 'hello'
+```
+
+## API ##
+
 
 ### pluck = plucker(path) ###
 
@@ -31,6 +40,10 @@ return array.map(
 ### plucker(path, object) ###
 
 Shorthand for `plucker(path)(object)`.
+
+## See Also
+- [flat](https://github.com/hughsk/flat) - Flatten/unflatten nested Javascript
+  objects
 
 ## License ##
 
